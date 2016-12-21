@@ -16,7 +16,7 @@ namespace Quiz
         {
             InitializeComponent();
         }
-        List<musteri> musterilistesi = new List<musteri>();
+        
         musteri mstri = new musteri();
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
@@ -24,7 +24,7 @@ namespace Quiz
             mstri.AdSoyad = textBoxAboneAdi.Text;
             if (radioButton1.Checked)
             {
-                mstri.abonetipi = radioButton1.Checked;
+                mstri.abonetipi= radioButton1.Checked;
             }
             else
             {
@@ -32,7 +32,7 @@ namespace Quiz
             }
             mstri.ilkindex = int.Parse(textBoxIlkIndex.Text);
             mstri.sonindex = int.Parse(textBoxSonIndex.Text);
-            musterilistesi.Add(mstri);
+            
             
             double carpim;
             if (mstri.abonetipi==false)
@@ -44,13 +44,7 @@ namespace Quiz
                 carpim = (mstri.sonindex - mstri.ilkindex) * 0.5;
             }
             listBoxOdemeListesi.Items.Add(mstri.AdSoyad + " " + carpim);
-           
-            
-         
-            
-    
 
-     
         }
 
         private void listBoxOdemeListesi_DoubleClick(object sender, EventArgs e)

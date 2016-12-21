@@ -13,9 +13,14 @@ namespace Quiz
         public int ilkindex;
         public int sonindex;
 
+        public double OdemeHesapla( double onceki,double son, string AboneTuru)
+        {
+            return 0;
+        }
+
         public override string ToString()
         {
-            return this.AdSoyad ; 
+            return this.AdSoyad;
         }
     }
 }
