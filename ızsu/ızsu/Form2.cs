@@ -18,6 +18,7 @@ namespace ızsu
             textBoxAbone_No.Text = aboneForm2.AboneNo;
             textBoxAdSoyad.Text = aboneForm2.AdSoyad;
             textBoxtoplamodeme.Text = aboneForm2.OdemeHesapla(aboneForm2.OncekiSayac, aboneForm2.SonrakiSayac, aboneForm2.AboneTuru).ToString();
+            
 
         }
         

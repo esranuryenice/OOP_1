@@ -33,7 +33,9 @@
             this.textBoxAdSoyad = new System.Windows.Forms.TextBox();
             this.labelAdSoyad = new System.Windows.Forms.Label();
             this.textBoxtoplamodeme = new System.Windows.Forms.TextBox();
-            this.labeltoplamOdeme = new System.Windows.Forms.Label();
+            this.labelsonodeme = new System.Windows.Forms.Label();
+            this.labeltoplamodeme = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label_aboneNo
@@ -78,29 +80,47 @@
             this.textBoxtoplamodeme.Size = new System.Drawing.Size(182, 20);
             this.textBoxtoplamodeme.TabIndex = 5;
             // 
-            // labeltoplamOdeme
+            // labelsonodeme
             // 
-            this.labeltoplamOdeme.AutoSize = true;
-            this.labeltoplamOdeme.Location = new System.Drawing.Point(10, 82);
-            this.labeltoplamOdeme.Name = "labeltoplamOdeme";
-            this.labeltoplamOdeme.Size = new System.Drawing.Size(79, 13);
-            this.labeltoplamOdeme.TabIndex = 4;
-            this.labeltoplamOdeme.Text = "Toplam Ödeme";
+            this.labelsonodeme.AutoSize = true;
+            this.labelsonodeme.Location = new System.Drawing.Point(10, 82);
+            this.labelsonodeme.Name = "labelsonodeme";
+            this.labelsonodeme.Size = new System.Drawing.Size(63, 13);
+            this.labelsonodeme.TabIndex = 4;
+            this.labelsonodeme.Text = "Son Ödeme";
+            // 
+            // labeltoplamodeme
+            // 
+            this.labeltoplamodeme.AutoSize = true;
+            this.labeltoplamodeme.Location = new System.Drawing.Point(10, 112);
+            this.labeltoplamodeme.Name = "labeltoplamodeme";
+            this.labeltoplamodeme.Size = new System.Drawing.Size(79, 13);
+            this.labeltoplamodeme.TabIndex = 6;
+            this.labeltoplamodeme.Text = "Toplam Ödeme";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(90, 105);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(182, 20);
+            this.textBox1.TabIndex = 7;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labeltoplamodeme);
             this.Controls.Add(this.textBoxtoplamodeme);
-            this.Controls.Add(this.labeltoplamOdeme);
+            this.Controls.Add(this.labelsonodeme);
             this.Controls.Add(this.textBoxAdSoyad);
             this.Controls.Add(this.labelAdSoyad);
             this.Controls.Add(this.textBoxAbone_No);
             this.Controls.Add(this.label_aboneNo);
             this.Name = "Form2";
-            this.Text = "Form2";
-      
+            this.Text = "Ödeme Ekranı";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,6 +133,8 @@
         private System.Windows.Forms.TextBox textBoxAdSoyad;
         private System.Windows.Forms.Label labelAdSoyad;
         private System.Windows.Forms.TextBox textBoxtoplamodeme;
-        private System.Windows.Forms.Label labeltoplamOdeme;
+        private System.Windows.Forms.Label labelsonodeme;
+        private System.Windows.Forms.Label labeltoplamodeme;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

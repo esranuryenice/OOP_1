@@ -14,22 +14,29 @@ namespace ızsu
         public int OncekiSayac;
         public int SonrakiSayac;
         public string AboneTuru;
-
+        public double toplamodeme;
         public double OdemeHesapla(double onceki, double sonraki, string aboneTuru)
         {
+
             double result = 0;
-            if (aboneTuru=="EV")
+            double toplamödeme;
+
+            if (aboneTuru == "EV")
             {
-                result = (sonraki - onceki) * 0.3;
+                toplamödeme = (sonraki - onceki) * 0.3;
+                result++;
             }
             else
             {
                 result = (sonraki - onceki) * 0.5;
+                result++;
             }
             return result;
-
         }
-        public override string ToString()
+        
+	
+    
+       public override string ToString()
         {
             return this.AboneNo; 
         }

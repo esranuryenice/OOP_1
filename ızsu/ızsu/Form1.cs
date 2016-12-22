@@ -30,6 +30,7 @@ namespace ızsu
             aboneTuru = radioButton2.Checked == true ? "KURUM" : "EV";
             _abone. AboneTuru = aboneTuru;
             listBox1.Items.Add(_abone);
+          
                          
         }
 
@@ -40,18 +41,16 @@ namespace ızsu
             DialogResult result = MessageBox.Show("Ödeme Tutarı:" + odeme + "\nÖdeme Yapmak İstiyormusunuz", "Ödeme Ekranı", MessageBoxButtons.YesNo);
             if (result==DialogResult.Yes)
             {
-                listBox2.Items.Add(_abone);
-                listBox1.Items.Remove(_abone);
+                
+                Form2 frm = new Form2(_abone);
+                frm.Show();
+                
+                
+
             }
         }
 
-        private void listBox2_DoubleClick(object sender, EventArgs e)
-        {
-            musteribilgileri _abone = (musteribilgileri)listBox2.SelectedItem;
-            Form2 frm =new Form2(_abone);
-            frm.Show();
-            
-        }
+    
 
         
     }
