@@ -6,22 +6,19 @@ using System.Threading.Tasks;
 
 namespace Otomobil_OOP
 {
-    class Otomobil
+   public abstract class Otomobil
     {
         public string seri { get; set; }
         public string model { get; set; }
         public int MotorGucu { get; set; }
         public int MotorHacmi { get; set; }
 
-
-        public string Yazdir()
+        public override string ToString()
         {
             return string.Format("Seri : {0} Model : {1} Motor Gücü : {2} Motor Hacmi : {3}", seri, model, MotorGucu, MotorHacmi);
+        }
 
-        }
-        public virtual string Calistir()
-        {
-            return "Otomobil Çalıştı.";
-        }
+        public abstract string Calistir();
+        
     }
 }

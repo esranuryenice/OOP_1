@@ -23,15 +23,16 @@ namespace Otomobil_OOP
             Tofas duldul = new Tofas();
             Honda MemurArabası = new Honda();
 
-            MessageBox.Show(superAraba.Yazdir());
+            MessageBox.Show(superAraba+" ");
             MessageBox.Show(superAraba.Calistir());
 
 
-            MessageBox.Show(duldul.Yazdir());
+            MessageBox.Show(duldul+"");
             MessageBox.Show(duldul.Calistir());
 
-            MessageBox.Show(MemurArabası.Yazdir());
+            MessageBox.Show(MemurArabası+"");
             MessageBox.Show(MemurArabası.Calistir());
+
         }
     }
 }
