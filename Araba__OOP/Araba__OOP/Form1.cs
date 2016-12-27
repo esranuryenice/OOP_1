@@ -26,7 +26,7 @@ namespace Araba__OOP
             double ortalama100km = Convert.ToDouble(numericUpDown2.Value);
             Araba a = new Araba(cap, ortalama100km);
 
-           // a.yakitFİyat = Convert.ToDouble(numericUpDown3.Value);
+            // a.yakitFİyat = Convert.ToDouble(numericUpDown3.Value);
 
             MessageBox.Show("Kapasite :" + a.yakitDepoKapasite + "\nOrtalama Tüketim :" + a.ortamalaTuketim100km + "\nYakit Fiyati :" + /*a.yakitFİyat +*/ "\nMaxMesafe :" + a.ToplamYol);
 
@@ -38,10 +38,7 @@ namespace Araba__OOP
             double ortalama100km = Convert.ToDouble(numericUpDown2.Value);
             Araba a = new Araba(cap, ortalama100km);
 
-           // a.yakitFİyat = Convert.ToDouble(numericUpDown3.Value);
-
-
-
+            // a.yakitFİyat = Convert.ToDouble(numericUpDown3.Value);
 
             double km = Convert.ToDouble(numericUpDown4.Value);
             labelUcret.Text = km + " km" + a.UcretHesaplama(km) + "₺ dir.";
@@ -49,6 +46,6 @@ namespace Araba__OOP
 
         }
 
-        
+
     }
 }
