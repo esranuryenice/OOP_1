@@ -56,6 +56,8 @@
             // comboBoxElemanTuru
             // 
             this.comboBoxElemanTuru.FormattingEnabled = true;
+            this.comboBoxElemanTuru.Items.AddRange(new object[] {
+            "Satış Temsilcisi"});
             this.comboBoxElemanTuru.Location = new System.Drawing.Point(85, 21);
             this.comboBoxElemanTuru.Name = "comboBoxElemanTuru";
             this.comboBoxElemanTuru.Size = new System.Drawing.Size(121, 21);
