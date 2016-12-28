@@ -26,6 +26,7 @@ namespace KentKart
         OgretmenKart ogretmen = new OgretmenKart();
         Kart tam = new Kart();
         int kartid = 1;
+       static List<string> yolcular = new List<string>();
        
 
         private void Form1_Load(object sender, EventArgs e)
@@ -43,6 +44,7 @@ namespace KentKart
                 ogrenci.okulAdi = textBoxOkuladi.Text;
                 ogrenci.kartturu = yolcutipi.ogrenci;
                 listBox1.Items.Add(ogrenci);
+
                 temizle();
             }
             else if (radioButtonogretmen.Checked==true)
