@@ -21,17 +21,25 @@ namespace KentKart
         public Form1(Kart yolcu)
         {
             InitializeComponent();
+            degisiklik.bakiye = yolcu.bakiye;
         }
+        static List<Kart> kaliciliste = new List<Kart>();
+
+
         OgrenciKart ogrenci = new OgrenciKart();
         OgretmenKart ogretmen = new OgretmenKart();
         Kart tam = new Kart();
         int kartid = 1;
+        Kart degisiklik = new Kart();
        static List<string> yolcular = new List<string>();
        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            foreach (var item in kaliciliste)
+            {
+                listBox1.Items.Add(item);
+            }
         }
 
         private void buttonekle_Click(object sender, EventArgs e)
@@ -44,6 +52,7 @@ namespace KentKart
                 ogrenci.okulAdi = textBoxOkuladi.Text;
                 ogrenci.kartturu = yolcutipi.ogrenci;
                 listBox1.Items.Add(ogrenci);
+                kaliciliste.Add(ogrenci);
 
                 temizle();
             }
@@ -55,6 +64,7 @@ namespace KentKart
                 ogretmen.kartturu = yolcutipi.ogretmen;
                 listBox1.Items.Add(ogretmen);
                 temizle();
+                kaliciliste.Add(ogretmen);
             }
             else
             {
@@ -64,6 +74,7 @@ namespace KentKart
                 tam.kartturu = yolcutipi.tam;
                 listBox1.Items.Add(tam);
                 temizle();
+                kaliciliste.Add(tam);
             }
         }
 
@@ -110,14 +121,8 @@ namespace KentKart
                     this.Hide();
                     
                 }
-                else
-                {
-
-                }
-
+                
             }
-
-
  }
         
         private void temizle()

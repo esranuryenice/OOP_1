@@ -27,7 +27,7 @@ namespace KentKart
         {
             gelenyolcu.bakiye += int.Parse(textBoxbakiye.Text);
 
-            Form1 frm1 = new Form1();
+            Form1 frm1 = new Form1(gelenyolcu);
             frm1.Show();
             this.Hide();
         }
