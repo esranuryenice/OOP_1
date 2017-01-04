@@ -8,7 +8,7 @@ namespace PirincCafe.Models
 {
     class User
     {
-        string username;
-        string password;
+        public string username { get; set; }
+       public string password { get; set; }
     }
 }
