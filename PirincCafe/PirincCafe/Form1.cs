@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PirincCafe.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,11 @@ namespace PirincCafe
         {
             if (textBoxkullaniciadi.Text=="admin" && textBoxsifre.Text=="1234")
             {
-                
+                PirincCafe.Models.User a = new User();
+               
+              a.username = textBoxkullaniciadi.Text;
+              a.password = int.Parse(textBoxsifre.Text);
+                //MessageBox.Show("Kullanici Adi :"+a.username+"\n"+"Şifre :"+a.password);
                 Form2 frm = new Form2();
                 frm.Show();
                 this.Hide();

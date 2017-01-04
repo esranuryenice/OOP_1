@@ -16,5 +16,30 @@ namespace PirincCafe
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+                listBoxanayemekler.Items.Add(textBox1.Text);
+                textBox1.Text = null;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+                listBoxsalatalar.Items.Add(textBox2.Text);
+                textBox2.Text = null;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+                listBoxtatlilar.Items.Add(textBox3.Text);
+                textBox3.Text = null;
+
+
+        }
     }
 }
