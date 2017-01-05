@@ -31,24 +31,24 @@
             this.groupBoxmasalar = new System.Windows.Forms.GroupBox();
             this.listBoxodeme = new System.Windows.Forms.ListBox();
             this.panelyemekler = new System.Windows.Forms.Panel();
+            this.numericUpDowniçecek = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownyemek = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBoxicecek = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBoxyemek = new System.Windows.Forms.ComboBox();
             this.buttonsiparisver = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxyemek = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxicecek = new System.Windows.Forms.ComboBox();
-            this.numericUpDownyemek = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDowniçecek = new System.Windows.Forms.NumericUpDown();
             this.buttonodemeyap = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panelyemekler.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownyemek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDowniçecek)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownyemek)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxmasalar
@@ -80,6 +80,74 @@
             this.panelyemekler.Name = "panelyemekler";
             this.panelyemekler.Size = new System.Drawing.Size(243, 122);
             this.panelyemekler.TabIndex = 2;
+            // 
+            // numericUpDowniçecek
+            // 
+            this.numericUpDowniçecek.Location = new System.Drawing.Point(195, 53);
+            this.numericUpDowniçecek.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDowniçecek.Name = "numericUpDowniçecek";
+            this.numericUpDowniçecek.Size = new System.Drawing.Size(33, 20);
+            this.numericUpDowniçecek.TabIndex = 5;
+            this.numericUpDowniçecek.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDownyemek
+            // 
+            this.numericUpDownyemek.Location = new System.Drawing.Point(195, 18);
+            this.numericUpDownyemek.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownyemek.Name = "numericUpDownyemek";
+            this.numericUpDownyemek.Size = new System.Drawing.Size(33, 20);
+            this.numericUpDownyemek.TabIndex = 4;
+            this.numericUpDownyemek.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(15, 60);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "İçecek";
+            // 
+            // comboBoxicecek
+            // 
+            this.comboBoxicecek.FormattingEnabled = true;
+            this.comboBoxicecek.Location = new System.Drawing.Point(61, 57);
+            this.comboBoxicecek.Name = "comboBoxicecek";
+            this.comboBoxicecek.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxicecek.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Yemek";
+            // 
+            // comboBoxyemek
+            // 
+            this.comboBoxyemek.FormattingEnabled = true;
+            this.comboBoxyemek.Location = new System.Drawing.Point(61, 18);
+            this.comboBoxyemek.Name = "comboBoxyemek";
+            this.comboBoxyemek.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxyemek.TabIndex = 0;
             // 
             // buttonsiparisver
             // 
@@ -118,74 +186,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Pound :";
             // 
-            // comboBoxyemek
-            // 
-            this.comboBoxyemek.FormattingEnabled = true;
-            this.comboBoxyemek.Location = new System.Drawing.Point(61, 18);
-            this.comboBoxyemek.Name = "comboBoxyemek";
-            this.comboBoxyemek.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxyemek.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 21);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Yemek";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 60);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "İçecek";
-            // 
-            // comboBoxicecek
-            // 
-            this.comboBoxicecek.FormattingEnabled = true;
-            this.comboBoxicecek.Location = new System.Drawing.Point(61, 57);
-            this.comboBoxicecek.Name = "comboBoxicecek";
-            this.comboBoxicecek.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxicecek.TabIndex = 2;
-            // 
-            // numericUpDownyemek
-            // 
-            this.numericUpDownyemek.Location = new System.Drawing.Point(195, 18);
-            this.numericUpDownyemek.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownyemek.Name = "numericUpDownyemek";
-            this.numericUpDownyemek.Size = new System.Drawing.Size(33, 20);
-            this.numericUpDownyemek.TabIndex = 4;
-            this.numericUpDownyemek.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDowniçecek
-            // 
-            this.numericUpDowniçecek.Location = new System.Drawing.Point(195, 53);
-            this.numericUpDowniçecek.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDowniçecek.Name = "numericUpDowniçecek";
-            this.numericUpDowniçecek.Size = new System.Drawing.Size(33, 20);
-            this.numericUpDowniçecek.TabIndex = 5;
-            this.numericUpDowniçecek.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // buttonodemeyap
             // 
             this.buttonodemeyap.Location = new System.Drawing.Point(351, 346);
@@ -194,6 +194,7 @@
             this.buttonodemeyap.TabIndex = 7;
             this.buttonodemeyap.Text = "Ödeme Yap";
             this.buttonodemeyap.UseVisualStyleBackColor = true;
+            this.buttonodemeyap.Click += new System.EventHandler(this.buttonodemeyap_Click);
             // 
             // label6
             // 
@@ -235,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 398);
+            this.ClientSize = new System.Drawing.Size(730, 398);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -253,8 +254,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelyemekler.ResumeLayout(false);
             this.panelyemekler.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownyemek)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDowniçecek)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownyemek)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

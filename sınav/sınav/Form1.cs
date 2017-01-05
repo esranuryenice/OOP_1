@@ -7,18 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace sınav
 {
     public partial class Form1 : Form
     {
-        //private string masano;
+       
 
         public Form1()
         {
             InitializeComponent();
         }
-
+        XmlDocument xmldoc;
+        DateTime tarih;
+        string USD;
+        string EUR;
+        string GBP;
         private void Form1_Load(object sender, EventArgs e)
         {
             panelyemekler.Visible = false;
@@ -42,8 +47,15 @@ namespace sınav
 
             }
            }
-            
-
+            var xmldoc = new XmlDocument();
+            xmldoc.Load("http://www.tcmb.gov.tr/kurlar/today.xml");
+            tarih = Convert.ToDateTime(xmldoc.SelectSingleNode("//Tarih_Date").Attributes["Tarih"].Value);
+            USD = xmldoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteSelling").InnerXml;
+            EUR = xmldoc.SelectSingleNode("Tarih_Date/Currency[@Kod='EUR']/BanknoteSelling").InnerXml;
+            GBP = xmldoc.SelectSingleNode("Tarih_Date/Currency[@Kod='GBP']/BanknoteSelling").InnerXml;
+            label6.Text = USD;
+            label7.Text = EUR;
+            label8.Text = GBP;
 
         }
         private void Button_Click(Object sender, EventArgs e)
@@ -73,20 +85,22 @@ namespace sınav
 
         private void buttonsiparisver_Click(object sender, EventArgs e)
         {
-
+            List<double> siparişler = new List<double>();
             if (comboBoxicecek.SelectedItem != null&& comboBoxyemek.SelectedItem != null)
             {
                 listBoxodeme.Items.Add(comboBoxicecek.SelectedItem + "\t " + numericUpDowniçecek.Value + " Adet");
                 listBoxodeme.Items.Add(comboBoxyemek.SelectedItem + " \t" + numericUpDownyemek.Value + " Adet");
             }
-            else if (listBoxodeme.Items==null)
-            {
-                listBoxodeme.Items.Remove(-1);
-            }
-         
+
+            
                
                 
             
+        }
+
+        private void buttonodemeyap_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

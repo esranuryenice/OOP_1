@@ -12,9 +12,8 @@ namespace sınav
         public string içecek { get; set; }
         public int yemekadet { get; set; }
         public int icecekadet { get; set; }
-        public int yemekfiyat { get; set; }
-        public int icecekfiyat { get; set; }
-        public string masano { get; set; }
+        
+       
 
       
 
