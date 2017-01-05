@@ -22,9 +22,10 @@ namespace odev
         {
 
             Random rastgelesayi = new Random();
-           int sayi= rastgelesayi.Next(0, 9);
+           int sayi= rastgelesayi.Next(0,9 );
             MessageBox.Show(textBox1.Text +" " + sayi.ToString()+" "+"numaralı kişiyle eşleştin...");
-           
+            
+          
 
 
 
