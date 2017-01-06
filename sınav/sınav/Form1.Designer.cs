@@ -46,6 +46,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panelyemekler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDowniçecek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownyemek)).BeginInit();
@@ -226,17 +228,38 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(307, 5);
+            this.label9.Location = new System.Drawing.Point(388, 8);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 13);
+            this.label9.Size = new System.Drawing.Size(0, 13);
             this.label9.TabIndex = 11;
-            this.label9.Text = "Masa No:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(304, 8);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 13);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Masa No:";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(506, 128);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(38, 17);
+            this.radioButton1.TabIndex = 13;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "TL";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 398);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -281,6 +304,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 
